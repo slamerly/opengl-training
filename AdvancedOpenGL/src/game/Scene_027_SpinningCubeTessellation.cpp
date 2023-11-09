@@ -33,7 +33,7 @@ void Scene_027_SpinningCubeTessellation::load() {
 
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
-    glPatchParameteri(GL_PATCH_VERTICES, 4);
+    glPatchParameteri(GL_PATCH_VERTICES, 3);
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     projection = Matrix4::createPerspectiveFOV(70.0f, game->windowWidth, game->windowHeight, 0.1f, 1000.0f);
 
