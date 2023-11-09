@@ -1,14 +1,14 @@
-#ifndef Scene_001_Atom_H
-#define Scene_001_Atom_H
+#ifndef Scene_026_Atom_H
+#define Scene_026_Atom_H
 
 #include "../engine/Scene.h"
 #include "../engine/Assets.h"
 
 
-class Scene_001_Atom : public Scene {
+class Scene_026_Atom : public Scene {
 public:
-    Scene_001_Atom();
-    ~Scene_001_Atom();
+    Scene_026_Atom();
+    ~Scene_026_Atom();
     void load();
     void clean();
     void pause();
@@ -30,4 +30,4 @@ private:
 };
 
 
-#endif //Scene_001_Atom_H
+#endif //Scene_026_Atom_H

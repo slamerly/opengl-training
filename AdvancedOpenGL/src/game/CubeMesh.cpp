@@ -71,6 +71,11 @@ void CubeMesh::draw() {
   glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
+void CubeMesh::drawTesselation() 
+{
+  glDrawArrays(GL_PATCHES, 0, 36);
+}
+
 void CubeMesh::clean() {
   glDeleteVertexArrays(1, &vao);
 }

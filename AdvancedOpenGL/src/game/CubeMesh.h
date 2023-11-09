@@ -7,6 +7,7 @@ class CubeMesh {
 public:
   void load();
   void draw();
+  void drawTesselation();
   void clean();
 private:
   GLuint vao;

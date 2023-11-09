@@ -12,6 +12,7 @@ public:
 
   void update();
   void draw(Shader& shader);
+  void drawTesselation(Shader& shader);
 
   float getX() const { return x; }
   float getY() const { return y; }

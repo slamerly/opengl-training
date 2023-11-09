@@ -1,4 +1,4 @@
-#include "Scene_001_Atom.h"
+#include "Scene_026_Atom.h"
 #include "../engine/Timer.h"
 #include "../engine/MacroUtils.h"
 
@@ -7,19 +7,19 @@
 #include <GL/glew.h>
 
 
-Scene_001_Atom::Scene_001_Atom()
+Scene_026_Atom::Scene_026_Atom()
 {
 }
 
-Scene_001_Atom::~Scene_001_Atom() {
+Scene_026_Atom::~Scene_026_Atom() {
     clean();
 }
 
-void Scene_001_Atom::setGame(Game *_game) {
+void Scene_026_Atom::setGame(Game *_game) {
     game = _game;
 }
 
-void Scene_001_Atom::load() {
+void Scene_026_Atom::load() {
     std::srand((int) std::time(nullptr));
     Assets::loadShader(SHADER_VERT(SHADER_NAME), SHADER_FRAG(SHADER_NAME), "", "", "", SHADER_ID(SHADER_NAME));
 
@@ -103,20 +103,20 @@ void Scene_001_Atom::load() {
     shader = Assets::getShader(SHADER_ID(SHADER_NAME));
 }
 
-void Scene_001_Atom::clean() {
+void Scene_026_Atom::clean() {
     glDeleteVertexArrays(1, &vao);
 }
 
-void Scene_001_Atom::pause() {
+void Scene_026_Atom::pause() {
 }
 
-void Scene_001_Atom::resume() {
+void Scene_026_Atom::resume() {
 }
 
-void Scene_001_Atom::handleEvent(const InputState &inputState) {
+void Scene_026_Atom::handleEvent(const InputState &inputState) {
 }
 
-void Scene_001_Atom::update(float dt) {
+void Scene_026_Atom::update(float dt) {
     const float t = Timer::getTimeSinceStart() * 0.3f;
     transform[0] = Matrix4::createTranslation(Vector3(0.0f, 0.0f, -10.0f))
         //* Matrix4::createScale(Vector3(1.f, 1.f, 1.f))
@@ -135,7 +135,7 @@ void Scene_001_Atom::update(float dt) {
     }
 }
 
-void Scene_001_Atom::draw()
+void Scene_026_Atom::draw()
 {
     static const GLfloat bgColor[] = {.75f, .75f, 0.75f, 1.0f};
     glClearBufferfv(GL_COLOR, 0, bgColor);

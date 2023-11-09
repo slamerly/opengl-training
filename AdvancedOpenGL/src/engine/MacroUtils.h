@@ -19,10 +19,12 @@
 #define SHADER_COMP(s) PATH3(SHADER_PATH,s,EXT_COMP)
 #define SHADER_ID(s) STR(s)
 
-#define SCENE_NAME Scene_001_Atom
-#define SHADER_NAME IDENT(001_Atom)
+#define SCENE_NAME Scene_027_SpinningCubeTessellation
+#define SHADER_NAME IDENT(027_SpinningCubeTessellation)
 
 /**
+ * Scene_027_SpinningCubeTessellation
+ * Scene_026_Atom
  * Scene_025_ComputeShaderBoids
  * Scene_024_ComputeShaderRaytracing
  * Scene_023_ComputeShaderGrid
@@ -43,5 +45,4 @@
  * Scene_008_SpinningCubes
  * Scene_007_SpinningCube
  * Scene_006_Fragment
- * Scene_001_Atom
  *  * */
