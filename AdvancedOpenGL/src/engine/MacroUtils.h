@@ -19,10 +19,11 @@
 #define SHADER_COMP(s) PATH3(SHADER_PATH,s,EXT_COMP)
 #define SHADER_ID(s) STR(s)
 
-#define SCENE_NAME Scene_027_SpinningCubeTessellation
-#define SHADER_NAME IDENT(027_SpinningCubeTessellation)
+#define SCENE_NAME Scene_028_ComputeShaderPerso
+#define SHADER_NAME IDENT(028_ComputeShaderPerso)
 
 /**
+ * Scene_028_ComputeShaderPerso
  * Scene_027_SpinningCubeTessellation
  * Scene_026_Atom
  * Scene_025_ComputeShaderBoids
